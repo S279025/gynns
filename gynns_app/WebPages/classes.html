@@ -1,0 +1,196 @@
+<!DOCTYPE html> <!-- establishing the document type -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gynns classes</title> <!-- Browser tab name -->
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+    }
+
+    /* Section for the text type of the page */
+
+    header {
+      background-color: white;
+      padding: 1em 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    /* Section for the top of the page's attributes */
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      padding: 1em 0;
+    }
+
+    /* Section for the top of the page's size and how the buttons align */
+
+    .logos-img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .logos-text {
+      font-size: 1.0em;
+      font-weight: bold;
+      color: #333;
+    }
+
+    /* Section for the logos on the header of the page */
+
+    nav {
+      background-color: orange;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 1200;
+      margin: 0 auto;
+      padding: 0.5em 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #333;
+    }
+
+    /* Section for the navigation bar and its functionality */
+
+    main {
+      padding: 2em;
+      max-width: 1920px;
+      margin: auto;
+      background-color: cyan;
+      min-height: 60vh;
+    }
+
+    /* Section for the main content of the page */
+
+    footer {
+      background-color: white;
+      text-align: center;
+      padding: 1em 0;
+      border-top: 1px solid #ddd;
+      color: #333;
+    }
+
+    /* Section for the footer of the page */
+
+    @media (max-width: 600px) {
+      .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+    /* Section to add media types on the page */
+
+      nav ul {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+    }
+
+    /* Section to finish the navigation bar */
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <img src="gynnslogo.png" alt="Logo" class="logos-img"/>
+      <div class="gynnslogo-text">        Gynns Online                </div>
+      <a href="https://instagram.com">
+        <img src="instagramlogo.png" alt="Clickable Logo" class="logos-img" />
+      </a>
+      <a href="https://twitter.com">
+        <img src="xlogo.png" alt="Clickable Logo" class="logos-img" />
+      </a>
+    </div>
+  </header>
+
+    <!-- Content for the header -->
+
+  <nav>
+    <div class="nav-container">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="classes.html">Classes</a></li>
+        <li><a href="gyms.html">Gyms</a></li>
+        <li><a href="contactus.html">Manage</a></li>
+      </ul>
+    </div>
+  </nav>
+
+    <!-- Content for the navigation bar -->
+
+  <main>
+    <h1>Gynns upcoming classes schedule</h1>
+    <br>Below is a list of all our upcoming classes in your registered gym:<br>
+<table border="1">
+  <tr>
+    <th>Class Name</th>
+    <th>Date</th>
+    <th>Time</th>
+  </tr>
+  <tr>
+    <td>Yogo</td>
+    <td>30/5/25</td>
+    <td>18:00</td>
+  </tr>
+  <tr>
+    <td>Boxing</td>
+    <td>31/5/25</td>
+    <td>18:00</td>
+  </tr>
+  <tr>
+    <td>Step</td>
+    <td>1/6/25</td>
+    <td>18:00</td>
+  </tr>
+</table>
+
+    <!-- Table for the upcoming classes on Gynns -->
+
+  </main>
+
+    <!-- Main content -->
+
+  <footer>
+    &copy; in 2025 By Gynns Limited.
+  </footer>
+
+    <!-- Content for the footer -->
+
+</body>
+</html>

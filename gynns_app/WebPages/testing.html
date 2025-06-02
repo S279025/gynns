@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: white;
+    }
+
+    header {
+      background-color: white;
+      padding: 0.5em 0; /* smaller padding */
+      border-bottom: 1px solid #ddd;
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      padding: 0.5em 0; /* reduced */
+    }
+
+    .logo-img {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+
+    .gynnslogo-text {
+      font-size: 0.9em; /* smaller font */
+      font-weight: bold;
+      color: #333;
+    }
+
+    nav {
+      background-color: orange;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0.5em 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #333;
+    }
+
+    main {
+      padding: 2em;
+      max-width: 1200px;
+      margin: auto;
+      background-color: cyan;
+      min-height: 60vh;
+    }
+
+    footer {
+      background-color: white;
+      text-align: center;
+      padding: 1em 0;
+      border-top: 1px solid #ddd;
+      color: #333;
+    }
+
+    @media (max-width: 600px) {
+      .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <img src="gynnslogo.png" alt="Logo" class="logo-img" />
+      <div class="gynnslogo-text">Gynns Online</div>
+    </div>
+  </header>
+
+  <nav>
+    <div class="nav-container">
+      <ul>
+        <li><a href="#index.html">Home</a></li>
+        <li><a href="#classes.html">Classes</a></li>
+        <li><a href="#gyms.html">Gyms</a></li>
+        <li><a href="#manage.html">Manage</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Welcome to Gynns!</h1>
+    <p>test.</p>
+  </main>
+
+  <footer>
+    &copy; in 2025 By Gynns Limited.
+  </footer>
+
+</body>
+</html>
